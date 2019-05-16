@@ -1,0 +1,30 @@
+<p id="program1">
+<hello name="{{ name }}"></hello>
+</p>
+
+<p id="program2">
+<button (click)=fun1($event)>Submit</button>
+</p>
+<p id="program3">
+<input type="text" id="yourname" placeholder="Enter Your Name"  #myname >
+<button (click)=fun2($event,myname.value)>Click Here</button>
+</p>
+
+<p id="program3">
+<input type="number" id=no1 #no1 placeholder="Enter First No"><br><br>
+<input type="number" id=no2 #no2 placeholder="Enter Second No"><br><br>
+<button (click)=fun3(no1.value,no2.value)>Calculate</button>
+</p>
+
+
+<p id="program4">
+<input type="text" id=username #uname placeholder="Enter UserName"><br><br>
+<input type="password" id=password #pass placeholder="Enter Password"><br><br>
+<button (click)=fun4($event,uname.value,pass.value)>Login</button>
+</p>
+
+<p id="program5">
+<input type="text" id=c #c placeholder="Enter Any Color"><br><br>
+<button (click)=addColor($event,c.value)>Add Now</button>
+</p>
+<ul><li *ngFor="let c of Colors">{{c}}</li></ul>
